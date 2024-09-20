@@ -1,0 +1,11 @@
+---
+collections:
+- name: ansible.posix
+- name: fedora.linux_system_roles
+- name: community.general
+- name: infra.controller_configuration
+- name: infra.leapp
+- name: infra.lvm_snapshots
+- name: https://github.com/heatmiser/ansible-snapshot.git
+  type: git
+  version: main

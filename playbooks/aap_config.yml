@@ -1,0 +1,4 @@
+---
+- name: Configure LEAPP assets for AAP
+  hosts: all
+  tasks:
