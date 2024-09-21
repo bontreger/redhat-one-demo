@@ -1,0 +1,13 @@
+---
+controller_inventory_sources:
+  - name: Proxmox inventory
+    organization: Default
+    source: scm
+    source_project: LEAPP
+    source_path: .proxmox.yml
+    inventory: LEAPP Inventory
+    credential:
+    overwrite: true
+    overwrite_vars: true
+    update_on_launch: false
+    update_cache_timeout: 0
