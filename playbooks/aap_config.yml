@@ -2,6 +2,8 @@
 - name: Configure LEAPP assets for AAP
   hosts: all
   connection: local
+  vars:
+    - "../vars/controller/*"
   tasks:
     - name: Create Inventories
       ansible.builtin.include_role:
