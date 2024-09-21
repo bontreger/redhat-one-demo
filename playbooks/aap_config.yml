@@ -2,7 +2,7 @@
 - name: Configure LEAPP assets for AAP
   hosts: all
   connection: local
-  vars:
+  vars_files:
     - "../vars/controller/*"
   tasks:
     - name: Create Inventories
