@@ -4,7 +4,7 @@ controller_inventory_sources:
     organization: Default
     source: scm
     source_project: LEAPP
-    source_path: .proxmox.yml
+    source_path: inventory/local.proxmox.yml
     inventory: LEAPP Inventory
     credential: Proxmox connection
     overwrite: true
