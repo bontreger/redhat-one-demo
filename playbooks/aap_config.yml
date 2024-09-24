@@ -4,6 +4,7 @@
   connection: local
   vars_files:
     - "../vars/controller/auth.yml"
+    - "../vars/controller/credentials.yml"
     - "../vars/controller/inventories.yml"
     - "../vars/controller/inventory_sources.yml"
     - "../vars/controller/vault.yml"
