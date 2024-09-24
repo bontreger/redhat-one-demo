@@ -1,7 +1,7 @@
 ---
 collections:
 - name: ansible.posix
-- name: ansible.controller
+- name: awx.awx
 - name: fedora.linux_system_roles
 - name: community.general
 - name: infra.controller_configuration
