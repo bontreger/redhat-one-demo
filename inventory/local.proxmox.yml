@@ -1,4 +1,0 @@
----
-- plugin: community.general.proxmox
-  url: "https://192.168.1.2:8006"
-  want_facts: true
