@@ -8,6 +8,14 @@
     - "../vars/controller/inventory_sources.yml"
     - "../vars/controller/vault.yml"
   tasks:
+    - name: Create custom credential type
+      ansible.builtin.include_role:
+        name: infra.controller_configuration.credential_types
+
+    - name: Create credentials
+      ansible.builtin.include_role:
+        name: infra.controller_configuration.credentials
+
     - name: Create Inventories
       ansible.builtin.include_role:
         name: infra.controller_configuration.inventories

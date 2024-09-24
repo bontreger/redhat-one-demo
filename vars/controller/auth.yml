@@ -6,3 +6,7 @@ controller_username: "{{ vault_controller_username }}"
 controller_password: "{{ vault_controller_password }}"
 controller_validate_certs: false
 controller_request_timeout: 60
+
+proxmox_hostname: "{{ vault_proxmox_hostname }}"
+proxmox_username: "{{ vault_proxmox_username }}"
+proxmox_password: "{{ vault_proxmox_password }}"
