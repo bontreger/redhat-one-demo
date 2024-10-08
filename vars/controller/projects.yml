@@ -1,8 +1,15 @@
 ---
 controller_projects:
-  - name: LEAPP Implementation
+  - name: LEAPP Implementation - PROD
     organization: Default
     scm_type: git
     scm_url: https://git.bontreger.dev/ryan/leapp-implementation.git
+    credential: Bontreger Gitlab
+    state: present
+  - name: LEAPP Implementation - TEST
+    organization: Default
+    scm_type: git
+    scm_url: https://git.bontreger.dev/ryan/leapp-implementation.git
+    scm_branch: test
     credential: Bontreger Gitlab
     state: present
