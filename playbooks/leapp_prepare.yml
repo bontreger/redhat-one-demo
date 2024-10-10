@@ -1,0 +1,23 @@
+---
+- name: Prepare RHEL 7 hosts for LEAPP
+  hosts: all
+  tasks:
+    # stop and disable puppet
+    - name: Stop and disable puppet
+      ansible.builtin.service:
+        name: puppet
+        state: stopped
+        enabled: false
+      when: ansible_distribution_major_version == "7"
+    # enable the rhel 7 extras repo
+    - name: Enable the rhel 7 extras repo
+      ansible.builtin.yum_repository:
+        name: rhel-7-extras-rpms
+        state: present
+    # install the leapp-upgrade and the cockpit leapp utility
+    - name: Install the leapp-upgrade and the cockpit leapp utility
+      ansible.builtin.package:
+        name:
+          - leapp-upgrade
+          - cockpit-leapp
+        state: present
