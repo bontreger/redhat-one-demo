@@ -1,11 +1,11 @@
 ---
 nolog_debug: false
 
-controller_hostname: "aap.bontreger.dev"
-controller_username: "{{ vault_controller_username }}"
-controller_password: "{{ vault_controller_password }}"
-controller_validate_certs: false
-controller_request_timeout: 60
+aap_hostname: "aap25-ocp-ansible-automation-platform.apps.ocp.bontreger.dev"
+aap_username: "{{ vault_controller_username }}"
+aap_password: "{{ vault_controller_password }}"
+aap_validate_certs: false
+aap_request_timeout: 60
 
 proxmox_hostname: "{{ vault_proxmox_hostname }}"
 proxmox_username: "{{ vault_proxmox_username }}"
