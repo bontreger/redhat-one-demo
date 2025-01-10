@@ -9,3 +9,18 @@
         state: stopped
         enabled: false
       when: ansible_distribution_major_version == "7"
+    # install cockpit and cockpit-leapp
+    - name: Install cockpit and cockpit-leapp
+      ansible.builtin.package:
+        name:
+          - cockpit
+          - cockpit-leapp
+        state: present
+      when: ansible_distribution_major_version == "7"
+    # open the firewall for cockpit
+    - name: Open the firewall for cockpit
+      ansible.posix.firewalld:
+        port: "9090/tcp"
+        permanent: true
+        state: enabled
+      when: ansible_distribution_major_version == "7"
