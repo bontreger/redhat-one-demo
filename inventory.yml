@@ -4,4 +4,4 @@ all:
     gateway:
       hosts:
         gateway:
-          ansible_host: "https://aap25ocp-ansible-automation-platform.apps.ocp.bontreger.dev/"
+          ansible_host: "https://aap25ocp-ansible-automation-platform.apps.ocp.bontreger.dev"
